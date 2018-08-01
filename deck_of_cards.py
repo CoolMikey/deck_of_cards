@@ -48,11 +48,3 @@ class deck_of_cards:
             print("Deck empty.")
         if self.show_cards_after_each_step == 1:
             print(self.deck)
-
-
-sample_deck = deck_of_cards(type="aaaa", show_cards=1)
-sample_deck.card_numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9',
-                            '10', 'j', 'q', 'k', 'a']
-sample_deck.card_types = ['C', 'D', 'H', 'S']
-sample_deck.make_deck()
-sample_deck.shuffle_deck(no_of_shuffles=9)
