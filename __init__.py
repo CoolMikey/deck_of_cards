@@ -1,4 +1,11 @@
-import random
+'''
+This module is used to create a deck of cards and allows the basic modification
+of it.
+'''
+try:
+    import random
+except ImportError:
+    print("Can't import random, shuffle won't work.")
 
 
 class deck_of_cards:
@@ -6,6 +13,7 @@ class deck_of_cards:
     # are like me and can't remember the names
 
     def __init__(self, **kwargs):
+
         self.deck_type = str(kwargs.get('type', "poker"))
         self.show_cards_after_each_step = int(kwargs.get('show_cards', "0"))
         self.deck = []
