@@ -6,8 +6,8 @@ To create a deck of poker cards:
 sample_deck = deck_of_cards()
 
 To create a special/unique deck use:
-sample_deck.card_numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9',
-                            '10', 'j', 'q', 'k', 'a']  #for the card values
+sample_deck.card_numbers = ['a','1', '2', '3', '4', '5', '6', '7', '8', '9',
+                            '10', 'j', 'q', 'k']  #for the card values
 sample_deck.card_types = ['C', 'D', 'H', 'S']          #for the card colors
 
 If you make a custom deck use the make_deck() method after to create a deck of these cards:
